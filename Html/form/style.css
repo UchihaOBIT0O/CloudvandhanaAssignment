@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@700&family=Roboto+Slab:wght@100;400&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: blue;
+}
+.container {
+  border-radius: 5px;
+  -webkit-box-shadow: -12px -12px 27px -5px rgba(0, 0, 0, 0.36);
+  -moz-box-shadow: -12px -12px 27px -5px rgba(0, 0, 0, 0.36);
+  box-shadow: -12px -12px 27px -5px rgba(0, 0, 0, 0.36);
+  width: 100%;
+  max-width: 900px;
+  position: relative;
+  margin: 0 15px;
+  padding: 30px;
+  position: relative;
+  height: 500px;
+  background-color: white;
+}
+.container header {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 0 0 -10px 0;
+}
+.container form {
+  position: relative;
+  min-height: 490px;
+}
+.fields {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+form .fields .input-field {
+  margin: 40px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  width: calc(260px - 15px);
+}
+
+.input-field > input {
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 5px;
+  outline: none;
+}
+#country {
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 5px;
+  outline: none;
+}
+.check {
+  position: absolute;
+  top: 66%;
+  left: 35.8%;
+}
+.checkbox-field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1px 0 0 0;
+  padding: 8px;
+  border-radius: 5px;
+}
+input[type="checkbox"] {
+  margin: 0 0 0 1px;
+}
+#check {
+  position: absolute;
+  top: 66%;
+  left: 35.6%;
+}
+.buttons {
+  display: flex;
+  position: relative;
+  margin-top: 50px;
+  margin-left: 300px;
+  max-width: 230px;
+  justify-content: space-between;
+  align-items: center;
+}
+button {
+  background-color: green;
+  border: none;
+  outline: none;
+  height: 30px;
+  color: white;
+  width: 80px;
+  border-radius: 5px;
+}
+button:active {
+  transform: scale(0.97);
+}
+button > span {
+  font-size: 12px;
+  font-family: "AR One Sans", sans-serif;
+}
+label {
+  font-size: 14px;
+  font-family: "AR One Sans", sans-serif;
+  margin-bottom: 8px;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+#close-popup {
+  margin-top: 15px;
+  background-color: #007bff;
+  color: #fff;
+}
+
+#close-popup:hover {
+  background-color: #0056b3;
+}
