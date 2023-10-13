@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sort Array</title>
+  </head>
+  <body>
+    <span id="arr" style="display: block">The Array is: </span>
+    <span id="span">Answer: </span>
+    <script>
+      const arr = [1, 2, 3, 9, 8, 7, 4, 6, 5];
+      const descending = (arr) => arr.sort((a, b) => b - a);
+      document.getElementById("arr").textContent += `${arr}`;
+      document.getElementById("span").textContent += descending(arr);
+    </script>
+  </body>
+</html>
