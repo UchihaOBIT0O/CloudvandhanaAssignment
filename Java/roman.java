@@ -1,4 +1,3 @@
-// Date created: 10/10/2021
 import java.util.Scanner;
 /**
  *
